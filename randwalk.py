@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 L = 16
 
-sims = 1000
+sims = 5000
 tmovil = np.zeros(L//2)
 tfijo = np.zeros(L//2)
 
@@ -17,7 +17,7 @@ for j  in range(L//2):
 		x2 = L-j
 		y2 = L-j
 
-		print(i)
+	#	print(i)
 		#while x1 != x2 and y1 != y2:
 		while True:
 			dado1 = np.random.randint(4)
@@ -72,7 +72,7 @@ for j  in range(L//2):
 		xf = L-j
 		yf = L-j
 
-		print(i)
+	#	print(i)
 		#while x1 != x2 and y1 != y2:
 		while True:
 			dado = np.random.randint(4)
@@ -104,9 +104,9 @@ for j  in range(L//2):
 
 ratio = tmovil / tfijo
 
-print(tmovil)
-print(tfijo)
 print(ratio)
+print("tmovil:",tmovil)
+print("tfijo",tfijo)
 
 plt.figure()
 plt.plot(ratio)
